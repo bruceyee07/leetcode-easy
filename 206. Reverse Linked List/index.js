@@ -10,6 +10,17 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
+var reverseList = function(head) {
+  var prev = null;
+  var cur = head;
+  while (cur !== null) {
+    var next = cur.next;
+    cur.next = prev;
+    prev = cur;
+    cur = next;
+  }
+  return prev;
+};
 
 class Node {
   constructor(data, next = null) {
@@ -67,17 +78,5 @@ ll.add(node2);
 ll.add(node3);
 ll.add(node4);
 ll.add(node5);
-
-var reverseList = function(head) {
-  var prev = null;
-  var cur = head;
-  while (cur !== null) {
-    var next = cur.next;
-    cur.next = prev;
-    prev = cur;
-    cur = next;
-  }
-  return prev;
-};
 
 reverseList(node1);
