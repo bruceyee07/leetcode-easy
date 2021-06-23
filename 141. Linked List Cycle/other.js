@@ -8,20 +8,16 @@
 
 /**
  * @description https://leetcode.com/problems/linked-list-cycle/
- * @type self
+ * @tutorial https://leetcode.com/problems/linked-list-cycle/discuss/44489/O(1)-Space-Solution
  * @param {ListNode} head
  * @return {boolean}
  */
 var hasCycle = function(head) {
-  if (head === null || head.next === null) {
-    return false;
-  }
-
   var fastPtr = slowPtr = head;
 
-  while (fastPtr && slowPtr) {
-    fastPtr = fastPtr.next ? fastPtr.next.next : null;
-    slowPtr = slowPtr.next || null;
+  while (fastPtr && fastPtr.next) {
+    fastPtr = fastPtr.next.next;
+    slowPtr = slowPtr.next;
     if (fastPtr === slowPtr) {
       return true;
     }
