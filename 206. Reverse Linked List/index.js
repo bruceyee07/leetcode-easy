@@ -7,6 +7,7 @@
  */
 /**
  * @description https://leetcode.com/problems/reverse-linked-list/
+ * @tutorial https://leetcode.com/problems/reverse-linked-list/solution/
  * @param {ListNode} head
  * @return {ListNode}
  */
