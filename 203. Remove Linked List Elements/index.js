@@ -6,6 +6,8 @@
  * }
  */
 /**
+ * @description https://leetcode.com/problems/remove-linked-list-elements/
+ * @type self
  * @param {ListNode} head
  * @param {number} val
  * @return {ListNode}
