@@ -8,6 +8,7 @@
  */
 /**
  * @description https://leetcode.com/problems/maximum-depth-of-binary-tree/
+ * @type self
  * @param {TreeNode} root
  * @return {number}
  */
