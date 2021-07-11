@@ -16,7 +16,7 @@ var postorderTraversal = function(root) {
   if (root === null) {
     return [];
   }
-  if (this.left === null && this.right === null) {
+  if (root.left === null && root.right === null) {
     return [root.val];
   }
   return postorderTraversal(root.left).concat(postorderTraversal(root.right)).concat([root.val]);
