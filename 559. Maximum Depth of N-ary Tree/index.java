@@ -23,8 +23,7 @@ class Node {
 class Solution {
   public int maxDepth(Node root) {
     if (root == null) return 0;
-    if (root.children.size() == 0) return 1;
-    int depth = 1;
+    int depth = 0;
     for (Node child : root.children) {
       depth = Math.max(depth, maxDepth(child));
     }
