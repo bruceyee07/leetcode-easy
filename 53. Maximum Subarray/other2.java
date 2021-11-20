@@ -1,6 +1,6 @@
 /**
  * https://leetcode.com/problems/maximum-subarray/
- * self
+ * https://leetcode.com/problems/maximum-subarray/discuss/20211/Accepted-O(n)-solution-in-java
  */
 class Solution {
   public int maxSubArray(int[] nums) {
